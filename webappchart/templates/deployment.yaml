@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: tranvietanh/angularfrontend:2
+        image: tranvietanh/angularfrontend:{{ .Values.imageTagNumber }}
