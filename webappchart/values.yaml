@@ -1,2 +1,4 @@
 replicaCount: 2
 imageTagNumber: latest
+setUpSSLCert: true
+clusterIssuerName: letsencrypt-prod
