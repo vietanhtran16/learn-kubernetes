@@ -13,5 +13,7 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-      - name: front-end
-        image: asia.gcr.io/images-registry/frontend:{{ .Values.imageTagNumber }}
+        - name: front-end
+          image: asia.gcr.io/images-registry/frontend:{{ .Values.imageTagNumber }}
+      imagePullSecrets:
+        - name: gcr-json-key
