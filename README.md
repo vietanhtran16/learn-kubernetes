@@ -7,12 +7,14 @@ Concepts covered
 - imagePullSecret from private GCR
 
 To be continued
-- Dockerise Java app with String Cal
-- External DNS
-- Config some appications secrets
+- Config some appications secrets and config map (can be done either from a file or ENV variable)
 - Share volume between containers in the same pod (difference between persistent and non-persistent volumes)
+- How to set a command/arguments from deployment yaml (with/without overriding cmd and entrypoint) - read
+- Dockerise Java app with String Cal
+- Networking policies (another yaml) - pod to pod communication using labels of the pods to determine from and to
+- Scheduler/CustomScheduler determine where the pods go on the node (this reads from podAffinity/antiAffinity and also nodeAffinity). Cluster would have a standard node, high cpu and high memory so that we can have rules based on what is the purpose of each pod
 - Init Containers
-- Networking policies - pod to pod communication
+- External DNS
 
 GRPC Load balacing - Istio helps with load balancing through GRPC 
 - Runs next to your application but doesnt interfere with it/ Platform agnostic
@@ -30,3 +32,4 @@ Useful links:
 - https://blog.container-solutions.com/using-google-container-registry-with-kubernetes
 - https://github.com/jetstack/cert-manager/tree/master/deploy/charts/cert-manager
 - https://docs.cert-manager.io/en/latest/tasks/issuers/setup-acme/index.html
+- https://github.com/dgkanatsios/CKAD-exercises
