@@ -33,3 +33,7 @@ Useful links:
 - https://github.com/jetstack/cert-manager/tree/master/deploy/charts/cert-manager
 - https://docs.cert-manager.io/en/latest/tasks/issuers/setup-acme/index.html
 - https://github.com/dgkanatsios/CKAD-exercises
+
+
+Questions:
+- When would you use configmap loaded as a volume over env variable? (seems like when use env and deployment does not change, new value for envs would not be loaded but when using volume, new value would be loaded through volume)

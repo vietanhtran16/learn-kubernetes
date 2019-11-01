@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-runtime-config
+data:
+  WHERE_AM_I: earth
+  WHERE_ARE_YOU: moon
