@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: front-end
-          image: asia.gcr.io/images-registry/frontend:{{ .Values.imageTagNumber }}
+          image: tranvietanh/angularfrontend:{{ .Values.imageTagNumber }}
           envFrom:
             - configMapRef:
                 name: app-runtime-config
