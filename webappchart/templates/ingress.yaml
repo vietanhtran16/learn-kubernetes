@@ -4,8 +4,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     {{ if and .Values.setUpSSLCert (eq .Values.setUpSSLCert true) }}
-    certmanager.k8s.io/cluster-issuer: {{ .Values.clusterIssuerName }}
-    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: {{ .Values.clusterIssuerName }}
     {{ end }}
 
   name: {{ .Release.Name }}-ingress
