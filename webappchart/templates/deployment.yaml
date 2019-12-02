@@ -21,6 +21,10 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /etc/config
+      initContainers:
+        - name: wait-for-service
+          image: busybox:1.28
+          command: ['sh', '-c', 'until nslookup {{ .Release.Name }}-service; do echo waiting for {{ .Release.Name }}-service; sleep 2; done;']
       volumes:
         - name: config-volume
           configMap:
