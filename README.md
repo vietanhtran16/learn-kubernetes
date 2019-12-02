@@ -11,9 +11,9 @@ To be continued
 - Share volume between containers in the same pod (difference between persistent and non-persistent volumes) PVC as well and storage classes
 - How to set a command/arguments from deployment yaml (with/without overriding cmd and entrypoint from Dockerfile) read about it (https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/)
 - Dockerise Java app with String Cal
-- Scheduler/CustomScheduler determine where the pods go on the node (this reads from podAffinity/antiAffinity and also nodeAffinity). Cluster would have a standard node, high cpu and high memory so that we can have rules based on what is the purpose of each pod
+- Scheduler/CustomScheduler determine where the pods go on the node (this reads from podAffinity/antiAffinity and also nodeAffinity). Cluster would have a standard node, high cpu and high memory so that we can have rules based on what is the purpose of each pod (TODO)
 - Init Containers
-- Networking policies (another yaml) - pod to pod communication using labels of the pods to determine from and to
+- Networking policies (another network policy resource) - pod to pod communication using labels of the pods to determine from and to (TODO)
 - External DNS (for fun)
 
 GRPC Load balacing - Istio helps with load balancing through GRPC 
